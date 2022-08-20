@@ -19,8 +19,14 @@ def main():
         Press 4 to choose Pencil
         Press 0 to EXIT!
         ''')
-        if (int(inp) not in range(5)):
+        try:
+         if (int(inp) not in range(5)):
+          print ('Please choose between  0-4!')
           continue
+          
+        except:
+         print ('Please make a choice!')
+         continue
         gcase=int(inp)*10+ai
         
  #       print (gcase)
