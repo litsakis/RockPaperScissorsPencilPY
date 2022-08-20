@@ -33,7 +33,9 @@ def main():
         except:# prevent null choice - case when user press only enter
          print ('Please make a choice!')
          continue
-        gcase=int(inp)*10+ai
+        gcase=int(inp)*10+ai #unify the options of User and AI into one int
+        # e.g 11 gcase meaning that both user and ai choose rock (its tie)
+        #12 meaning that user chose rock but the AI Paper. 
         
  #       print (gcase)
         
